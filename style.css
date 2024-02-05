@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+
+:root {
+	/* Primary colors */
+	--nutmeg: hsl(14, 45%, 36%);
+	--dark-raspberry: hsl(332, 51%, 32%);
+
+	/* Neutral colors*/
+	--white: hsl(0, 0%, 100%);
+	--rose-white: hsl(330, 100%, 98%);
+	--eggshell: hsl(30, 54%, 90%);
+	--light-grey: hsl(30, 18%, 87%);
+	--wenge-brown: hsl(30, 10%, 34%);
+	--dark-charcoal: hsl(24, 5%, 18%);
+}
+
+@font-face {
+	font-family: 'Young Serif';
+	src: local('Young Serif'),
+		url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Outfit', sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+	color: var(--wenge-brown);
+}
+
+h1 {
+	font-size: 34px;
+	line-height: 1.2;
+}
+
+h1,
+h2.serif {
+	font-family: 'Young Serif', serif;
+}
+
+p,
+li {
+	line-height: 1.4;
+}
+
+.main-content {
+	padding: 2rem;
+}
+
+.main-content > *:not(:last-child) {
+	margin-bottom: 1.5rem;
+}
+
+main img {
+	width: 100%;
+}
+
+.colored-box {
+	background-color: var(--rose-white);
+	padding: 1.5rem;
+	border-radius: 1.5rem;
+}
+
+.colored-box h2 {
+	color: var(--dark-raspberry);
+	margin-bottom: 1rem;
+	font-size: 20px;
+}
+
+ul,
+ol {
+	padding-left: 1.5rem;
+}
+
+:is(ul, ol) li {
+	margin-bottom: 0.65rem;
+	padding-left: 1rem;
+}
+
+:is(ul, ol) ::marker {
+	font-weight: 700;
+	color: var(--nutmeg);
+}
+
+h2.serif {
+	color: var(--nutmeg);
+	margin-bottom: 1.25rem;
+	font-size: 26px;
+}
+
+section:not(:last-of-type) {
+	border-bottom: 1.5px solid var(--light-grey);
+	padding-bottom: 1.5rem;
+}
+
+table {
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+	margin-top: 1.5rem;
+}
+
+table tr:not(:last-of-type) {
+	border-bottom: 1px solid var(--light-grey);
+}
+
+table :is(th, td) {
+	padding-block: 0.75rem;
+}
+
+table th {
+	font-weight: 400;
+	padding-left: 2rem;
+	width: 51%;
+}
+
+table td {
+	font-weight: 700;
+	color: var(--nutmeg);
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		background-color: var(--eggshell);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	main {
+		background-color: var(--white);
+		border-radius: 1.5rem;
+		padding: 2.5rem;
+		max-width: 735px;
+		margin-block: 7.5rem;
+	}
+
+	main img {
+		border-radius: inherit;
+	}
+
+	.main-content {
+		padding-inline: 0;
+		padding-bottom: 0;
+	}
+
+	h1 {
+		font-size: 38px;
+	}
+}
+
+.attribution {
+	font-size: 12px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
