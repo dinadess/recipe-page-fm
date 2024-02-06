@@ -23,8 +23,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- [Live Site URL](https://dinadess.github.io/recipe-page-fm/)
+- Solution URL: [Responsive Omelette Recipe Page](https://www.frontendmentor.io/solutions/responsive-omelette-recipe-page-built-with-html5-css3-and-aos-9r-VhEHBWh)
+- Live Site URL: [Omelette Recipe Page](https://dinadess.github.io/recipe-page-fm/)
 
 ## My process
 
