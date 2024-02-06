@@ -38,7 +38,9 @@ body {
 
 h1 {
 	font-size: 34px;
+	font-weight: 500;
 	line-height: 1.2;
+	color: var(--dark-charcoal);
 }
 
 h1,
